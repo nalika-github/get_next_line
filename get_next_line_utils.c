@@ -90,5 +90,6 @@ char	*ft_strcat(char *s1, char *s2)
 	j = -1;
 	while (buf[j++])
 		buf[i + j] = s2[j];
+	free(s1);
 	return (buf);
 }

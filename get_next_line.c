@@ -24,6 +24,7 @@ size_t	scan_st(char *buf, size_t lo, char *st)
 	{
 		temp = ft_calloc((lo - ft_strlen(buf)), 1);
 		i = (2 * (int)ft_strlen(buf) - lo) + 1;
+		j = 0;
 		while (i-- != 0)
 			j++;
 		while (i <= ft_strlen(buf))
@@ -42,14 +43,12 @@ size_t	scan_st(char *buf, size_t lo, char *st)
 
 char	*update_line(char *line, char *buf, size_t lo, char *st)
 {
-	char	*new_line;
-
 	if (!line)
 		line = ft_calloc(1, 1);
 	if (!line || !buf)
 		return (0);
 	if (scan_st(buf, lo, st))
-		new_line = ft_strcat(line, buf);
+		line = ft_strcat(line, buf);
 	ft_trim_line(new_line, '\n');
 	free (line);
 	return (new_line);
