@@ -6,7 +6,7 @@
 /*   By: ptungbun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 12:19:41 by ptungbun          #+#    #+#             */
-/*   Updated: 2022/05/16 17:43:55 by ptungbun         ###   ########.fr       */
+/*   Updated: 2022/05/22 11:09:04 by ptungbun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,24 +49,21 @@ char	*update_line(char *line, char *buf, size_t lo, char *st)
 		return (0);
 	if (scan_st(buf, lo, st))
 		line = ft_strcat(line, buf);
-	ft_trim_line(new_line, '\n');
+	ft_trim_line(line, '\n');
 	free (line);
-	return (new_line);
+	return (line);
 }
 
 char	*update_st(char *line, char *st)
 {
-	char	*new_st;
-
 	if (!line)
 		return (0);
-	new_st = malloc(sizeof(char) * (ft_strlen(st) + ft_strlen(line) + 1));
-	if (!new_st)
+	st = malloc(sizeof(char) * (ft_strlen(st) + ft_strlen(line) + 1));
+	if (!st)
 		return (0);
-	new_st = ft_strcat(st, line);
-	ft_trim_line(new_st, '\n');
-	free (line);
-	return (new_st);
+	st = ft_strcat(st, line);
+	free(line);
+	return (st);
 }
 
 char	*read_file(int fd, char *st)
