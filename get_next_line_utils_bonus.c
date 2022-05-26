@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ptungbun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/08 12:20:12 by ptungbun          #+#    #+#             */
-/*   Updated: 2022/05/16 16:18:40 by ptungbun         ###   ########.fr       */
+/*   Created: 2022/05/26 16:12:30 by ptungbun          #+#    #+#             */
+/*   Updated: 2022/05/26 16:12:34 by ptungbun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	ft_isn_line(char *str)
 {
