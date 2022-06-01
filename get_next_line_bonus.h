@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ptungbun <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/26 16:15:46 by ptungbun          #+#    #+#             */
-/*   Updated: 2022/05/26 16:15:51 by ptungbun         ###   ########.fr       */
+/*   Created: 2022/05/08 12:23:13 by ptungbun          #+#    #+#             */
+/*   Updated: 2022/05/11 18:14:30 by ptungbun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
+#  define BUFFER_SIZE 10000000
 # endif
 
 char	*get_next_line(int fd);
